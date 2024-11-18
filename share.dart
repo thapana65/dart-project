@@ -7,6 +7,6 @@ void main() {
   stdout.write('Enter amount person: ');
   int? amount = int.parse(stdin.readLineSync()!);
 
-  double avg = bill / amount;
-  stdout.write('Average per person: $avg Baht');
+  var total = (bill / amount).toStringAsFixed(2);
+  stdout.write('Average per person: $total Baht');
 }
