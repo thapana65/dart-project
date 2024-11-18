@@ -1,10 +1,12 @@
+import 'dart:io';
+
 void main() {
   var arr = [64, 25, 12, 22, 11];
-  print(arr);
 
+  printArray(arr);
   selectionSort(arr);
-
-  print(arr);
+  print('');
+  printArray(arr);
 }
 
 selectionSort(arr) {
@@ -21,5 +23,11 @@ selectionSort(arr) {
     var temp = arr[i];
     arr[i] = arr[min_idx];
     arr[min_idx] = temp;
+  }
+}
+
+printArray(arr) {
+  for (int i = 0; i < arr.length; i++) {
+    stdout.write('${arr[i]}\t');
   }
 }
