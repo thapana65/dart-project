@@ -1,9 +1,25 @@
 import 'dart:io';
-import 'dart:math';
 
 void main() {
-  stdout.write('Input: ');
-  while(true) {
-    std
+  List<int> bill = [];
+
+  while (true) {
+    stdout.write('Input: ');
+    String? input = stdin.readLineSync();
+
+    if (input == 'x' || input == null || input.isEmpty) {
+      print('Total: ${sumList(bill)}');
+      break;
+    } else {
+      bill.add(int.parse(input));
+    }
   }
+}
+
+int sumList(List<int> bill) {
+  int sum = 0;
+  for (int i in bill) {
+    sum += i;
+  }
+  return sum;
 }
