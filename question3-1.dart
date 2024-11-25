@@ -14,6 +14,4 @@ void main() {
   maxNumber(num1, num2, num3);
 }
 
-maxNumber(int num1, int num2, int num3) {
-  print('The maximum number is: ${max(max(num1, num2), num3)}');
-}
+maxNumber(int num1, int num2, int num3) => print('The maximum number is: ${max(max(num1, num2), num3)}');

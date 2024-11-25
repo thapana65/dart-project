@@ -10,6 +10,4 @@ void main() {
   createUser(name, age);
 }
 
-createUser(name, age, [isActive = 'true']) {
-  print('{"name":$name}, "age":$age, "isActive":$isActive}');
-}
+createUser(name, age, [isActive = 'true']) => print('{"name":$name}, "age":$age, "isActive":$isActive}');
