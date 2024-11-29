@@ -2,8 +2,10 @@ import 'dart:io';
 
 void main() {
   List<String> days = [];
-  int i = 0;
-  while (i < 7) {
+  stdout.write('Input number of day: ');
+  int? numOfDays = int.parse(stdin.readLineSync()!);
+  int i = 1;
+  while (i <= numOfDays) {
     stdout.write('Input day: ');
     String? input = stdin.readLineSync();
 
